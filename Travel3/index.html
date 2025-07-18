@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TripIndia</title>
+    <link rel="stylesheet" href="style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <section class="home" id="home">
+    
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="./beach video.mp4" type="video/mp4">
+        </video>
+    
+    <div class="home-box">
+      
+      <nav>
+        <div class="logo bars">
+          <div class="bar">
+          </div>
+          <h3>Trip<span>India</span></h3>
+        </div>
+
+        <div class="menu">
+          <ul class="sidebar" id="sidebar">
+            <li onclick="hideSidebar()"><a href="#" id="closeButton"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#popular">Destination</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          
+            <ul class="desktop-menu hideOnMobile">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#popular">Destination</a></li>
+              <li><a href="#packages">Packages</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          
+
+          <button class="menu-button" id="menuButton"><i class="ri-menu-line"></i></button>
+        </div>
+
+        <div class="signup-login">
+          <a href="#">Sign up</a>
+          <a href="#">Login</a>
+        </div>
+
+        
+        <div class="form-popup" id="formPopup">
+           <div class="form-content">
+             <span class="close-popup" onclick="closeForm()">&times;</span>
+
+
+        <div class="form-tabs">
+           <button onclick="showForm('signup')">Sign Up</button>
+           <button onclick="showForm('login')">Login</button>
+        </div>
+
+    
+    
+       <form id="signupForm" class="form-box" style="display:none;">
+        <h2>Sign Up</h2>
+         <input type="text" placeholder="Full Name" required />
+         <input type="email" placeholder="Email id" required />
+         <input type="password" placeholder="Password" required />
+        <button type="submit">Register</button>
+       </form>
+  
+      <form id="loginForm" class="form-box">
+       <h2>Login</h2>
+        <input type="email" placeholder="Email id" required />
+        <input type="password" placeholder="Password" required />
+       <button type="submit">Login</button>
+     </form>
+    </div>
+   </div>
+  </nav>
+
+      <div class="content">
+        
+        <h1>Let's explore the world and turn your dream vacation into reality.</h1>
+        <h3>"Uncover the Spirit of India – A Timeless Adventure Awaits."</h3>
+        <p>
+            Embark on an unforgettable journey through India a land of timeless traditions, breathtaking landscapes, and
+            exhilarating adventures. From tranquil retreats to vibrant cities, every moment promises wonder, beauty, and
+             memories that last a lifetime.
+          </p>
+
+          <div class="btn-group">
+
+            <a href="#about" class="primary-btn"> LEARN MORE</a>
+          
+          <a href="#packages" class="secondary-btn">BOOK NOW</a>
+          </div>
+  
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  
+  
+
+
+  <section class="tour-card-container">
+    <h2 class="heading">— Pick A Tour Type —</h2>
+    <h1 class="heading-normal-txts"><i class="ri-leaf-fill"></i>Tour Type<i class="ri-leaf-fill"></i></h1>
+    <div class="tour-grid">
+
+      <div class="tour-card">
+        <img src="./images/tour-1.jpg" alt="">
+        <h4>Forest Adventures</h4>
+        <p>18 Tours+</p>
+      </div>
+
+      <div class="tour-card">
+        <img src="./images/tour-2.jpg" alt="">
+        <h4>Mountains Climbing</h4>
+        <p>25 Tours+</p>
+      </div>
+
+      <div class="tour-card">
+        <img src="./images/tour-3.jpg" alt="">
+        <h4>Beach Vacations</h4>
+        <p>15 Tours+</p>
+      </div>
+
+      <div class="tour-card">
+        <img src="./images/tour-4.jpg" alt="">
+        <h4>City Tours</h4>
+        <p>20 Tours+</p>
+      </div>
+    </div>
+    
+  </section>
+
+  
+
+
+
+  <section id="popular">
+    <div class="popular-container">
+      <h2 class="heading">— Popular Places —</h2>
+      <h1 class="heading-normal-txts"><i class="ri-leaf-fill"></i>Top Destination<i class="ri-leaf-fill"></i></h1>
+      <div class="popular">
+
+          <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> KASHMIR</h2>
+          <img src="./images/destinations-1.jpg"  alt="">
+          <div class="layer">
+            <h3>4Days / 3Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 11,000</h1>
+              <li>Shikara ride on Dal Lake</li>
+              <li>Gondola cable car in Gulmarg</li>
+              <li>Snow skiing and sledding</li>
+              <li>Tulip garden visit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> MUNNAR</h2>
+          <img src="./images/destinations-2.jpg" alt="">
+          <div class="layer">
+            <h3>5Days / 4Night Tour</h3>
+            <ul>
+                <h1>Start from &#8377; 8,000</h1>
+                <li>Tea plantation tours</li>
+                <li>Eravikulam National Park visit</li>
+                <li>Jeep safari to Kolukkumalai</li>
+                <li>Nature walks and birdwatching</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> KODAIKANAL</h2>
+          <img src="./images/destinations-3.jpg" alt="">
+          <div class="layer">
+            <h3>5Days / 4Night Tour</h3>
+            <ul>
+            <h1>Start from &#8377; 7,000</h1>
+          <li>Boating on Kodaikanal Lake</li>
+          <li>Coaker’s Walk trail</li>
+          <li>Trekking to Dolphin’s Nose</li>
+          <li>Visit Pillar Rocks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> SHIMLA</h2>
+          <img src="./images/destinations-4.jpg" alt="">
+          <div class="layer">
+            <h3>4Days / 3Night Tour </h3>
+            <ul>
+             <h1>Start from &#8377; 8,000</h1>
+             <li>Toy train ride (Kalka–Shimla)</li>
+             <li>Trek to Jakhoo Temple</li>
+             <li>Ice skating in winter</li>
+             <li>Mall Road shopping</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> MANALI</h2>
+          <img src="./images/destinations-5.jpg" alt="">
+          <div class="layer">
+            <h3>4Days / 3Night Tour</h3>
+            <ul>
+            <h1>Start from &#8377; 9,500</h1>
+            <li>Paragliding in Solang Valley</li>
+            <li>Skiing and snowboarding</li>
+            <li>River rafting in Beas River</li>
+            <li>Visit Rohtang Pass</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> LADAKH</h2>
+          <img src="./images/destinations-6.jpg" alt="">
+          <div class="layer">
+            <h3>3Days / 2Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 10,500</h1>
+             <li>Pangong Lake camping</li>
+             <li>Biking on Khardung La Pass</li>
+             <li>River rafting in Zanskar</li>
+             <li>Visit ancient monasteries</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> GOA</h2>
+          <img src="./images/destinations-7.jpg" alt="">
+          <div class="layer">
+            <h3>3Days / 2Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 7,500</h1>
+              <li>Water sports: jet ski, parasailing</li>
+              <li>Beach hopping (Baga, Anjuna)</li>
+              <li>Night cruise and parties</li>
+              <li>Visit forts and spice plantations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> TAJ MAHAL</h2>
+          <img src="./images/destinations-8.jpg" alt="">
+          <div class="layer">
+            <h3>2Days / 1Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 7,000</h1>
+              <li>Heritage walk around Agra Fort</li>
+              <li>Sunrise visit to Taj Mahal</li>
+              <li>Mehtab Bagh photography</li>
+              <li>Mughal cuisine tasting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> ALLEPPEY</h2>
+          <img src="./images/destinations-9.jpg" alt="">
+          <div class="layer">
+            <h3>3Days / 2Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 7,500</h1>
+              <li>Houseboat cruise in backwaters</li>
+              <li>Canoe ride through narrow canals</li>
+              <li>Local village and paddy tour</li>
+              <li>Ayurveda spa sessions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> SIKKIM</h2>
+          <img src="./images/destinations-10.jpg" alt="">
+          <div class="layer">
+            <h3>4Days / 3Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 8,000</h1>
+              <li>Cable car ride in Gangtok</li>
+              <li>Trekking in Yumthang Valley</li>
+              <li>Tsomgo Lake yak ride</li>
+              <li>Monastery exploration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+            <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> MYSORE PALACES</h2>
+          <img src="./images/destinations-11.jpg" alt="">
+          <div class="layer">
+            <h3>4Days / 3Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 8,500</h1>
+              <li>Visit Mysore Palace with light show</li>
+              <li>Explore Chamundi Hills</li>
+              <li>Stroll in Brindavan Gardens</li>
+              <li>Silk and sandalwood shopping</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-content">
+            <div class="row">
+              <h2><i class="fa fa-location-dot"></i> DARJEELING</h2>
+          <img src="./images/destinations-12.jpg" alt="">
+          <div class="layer">
+            <h3>4Days / 3Night Tour</h3>
+            <ul>
+              <h1>Start from &#8377; 9,000</h1>
+              <li>Ride the Himalayan Toy Train</li>
+              <li>Tea estate tours</li>
+              <li>Tiger Hill sunrise view</li>
+              <li>Ropeway cable car ride</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+
+
+  
+
+    <section class="tour-search">
+      <div class="tour-container">
+  
+        <form action="" class="tour-search-form">
+  
+          <div class="input-wrapper">
+            <label for="destination" class="input-label">Search Destination</label>
+  
+            <input type="text" name="destination" id="destination" required placeholder="Enter Destination" class="input-field">
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="people" class="input-label">Max Number</label>
+  
+            <input type="number" name="people" id="people" required placeholder="No.of people" class="input-field">
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="checkin" class="input-label">Checkin Date</label>
+  
+            <input type="date" name="checkin" id="checkin" required  class="input-field">
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="checkout" class="input-label">Checkout Date</label>
+  
+            <input type="date" name="checkout" id="checkout" required class="input-field">
+          </div>
+  
+          <button type="submit" class="btn secondary-btn">INQUIRE NOW  <i class="ri-search-2-line"></i></button>
+  
+        </form>
+  
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+    <section class="packages" id="packages">
+      
+      <h2 class="heading">— Travel Packages —</h2>
+      <h1 class="heading-normal-txts"><i class="ri-leaf-fill"></i>Top Trending<i class="ri-leaf-fill"></i></h1>
+      <div class="box-container">
+
+      <div class="box">
+        <img src="./images/package-1.jpg" alt="">
+        <div class="content">
+          <h3><i class="fa fa-location-dot"></i> Gulmarg</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente corporis distinctio dolores.</p>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </div>
+          <div class="price">&#8377;9,000 <span>&#8377;13,500</span> </div><br>
+          <a href="#" class="primary-btn">BOOK NOW</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/package-2.jpg" alt="">
+        <div class="content">
+          <h3><i class="fa fa-location-dot"></i> Coorg</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente corporis distinctio dolores.</p>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price">&#8377; 7,500 <span>&#8377;11,000</span> </div><br>
+          <a href="#" class="primary-btn">BOOK NOW</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/package-3.jpg" alt="">
+        <div class="content">
+          <h3><i class="fa fa-location-dot"></i> Shimla</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente corporis distinctio dolores.</p>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </div>
+          <div class="price">&#8377;8,000 <span>&#8377;12,000</span> </div><br>
+          <a href="#" class="primary-btn">BOOK NOW</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/package-4.webp" alt="">
+        <div class="content">
+          <h3><i class="fa fa-location-dot"></i> Ooty</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente corporis distinctio dolores.</p>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price">&#8377;7,000 <span>&#8377;10,000</span> </div><br>
+          <a href="#" class="primary-btn">BOOK NOW</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/package-5.jpg" alt="">
+        <div class="content">
+          <h3><i class="fa fa-location-dot"></i> Manali</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente corporis distinctio dolores.</p>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </div>
+          <div class="price">&#8377;9,500 <span>&#8377;13,000</span> </div><br>
+          <a href="#" class="primary-btn">BOOK NOW</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/package-6.jpg" alt="">
+        <div class="content">
+          <h3><i class="fa fa-location-dot"></i> Taj Mahal</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente corporis distinctio dolores.</p>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </div>
+          <div class="price">&#8377;7,000 <span>&#8377;10,500</span> </div><br>
+          <a href="#" class="primary-btn">BOOK NOW</a>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    
+
+
+
+
+    
+    <section id="static-counter">
+      <div class="static-container">
+        <div class="static-wrapper">
+          <div class="static-icons">
+            <i class="fa fa-plane-departure"></i>
+            <p class="numbers" data-ceil="250">250</p>
+            <p class="txt">Flight Booking</p>
+          </div>
+          <div class="static-icons">
+            <i class="fa fa-home"></i>
+            <p class="numbers" data-ceil="315">315</p>
+            <p class="txt">Amazing Tour</p>
+          </div>
+          <div class="static-icons">
+            <i class="fa fa-ship"></i>
+            <p class="numbers" data-ceil="280">280</p>
+            <p class="txt">Cruises  Booking</p>
+          </div>
+          <div class="static-icons">
+            <i class="fa fa-ticket"></i>
+            <p class="numbers" data-ceil="410">410</p>
+            <p class="txt">Ticket Booking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    
+    
+      <section id="about">
+        <div class="about-container">
+          <div class="about-content-wrapper">
+            <div class="agency-left-side">
+              <h1 class="heading-normal-txt"><i class="ri-leaf-fill"></i>About Us<i class="ri-leaf-fill"></i></h1>
+              <h2 class="headings"> THE BEST TRAVEL AGENCY</h2>
+              <h2 class="headers">
+                Discover<span> The Wonders of India </span>- Your Ultimate Travel Experience Awaits!
+              </h2>
+  
+                <p class="lead">
+                  <li class="leads">Welcome to your gateway to incredible India — a land where time-honored 
+                    traditions blend seamlessly with modern marvels. From the snow-capped peaks of the Himalayas 
+                    to the lush tropical charm of the south, India is a kaleidoscope of colors, cultures, and unforgettable experiences.</li>
+
+                  <li class="leads">Whether you dream of wandering through the ancient forts of Rajasthan, 
+                    witnessing the sunrise over the Taj Mahal, cruising the peaceful backwaters of Kerala, or 
+                    tasting the spice-filled delights of Indian cuisine — we bring these moments to life.
+                  India is not just a destination; it's an emotion, a story waiting to be lived.</li>
+
+                  <li class="leads">
+                  With a heritage shaped by diverse civilizations, spiritual philosophies, and artistic treasures, every journey here is a soul-stirring adventure.
+                  At TripIndia, we craft personalized travel experiences designed to immerse you in the heart of India’s beauty and magic. Whether you're a solo explorer, a curious couple, or a family in search of wonder, India awaits with open arms and a warm Namaste.
+                  Begin your journey today — where every mile is a memory.</li>
+                </p>
+                
+                <a href="#services" class="primary-btn"> <i class="fa fa-arrow-right"></i>  EXPLORE TRAVEL</a>
+              
+            </div>
+            <div class="agency-right-side">
+              <div class="img">
+                <img src="./images/about-img.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="services" id="services">
+        <h2 class="heading">— Cost Effective —</h2>
+        <h1 class="heading-normal-txts"><i class="ri-leaf-fill"></i>Our Services<i class="ri-leaf-fill"></i></h1>
+
+        <div class="boxs-container">
+          
+          
+          <div class="boxs" data-aos="zoom-in-up" data-aos-delay="150">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventure</h3>
+            <p>Trekking through scenic mountains & jungle Paragliding over valleys and cliffs.</p>
+          </div>
+          <div class="boxs" data-aos="zoom-in-up" data-aos-delay="300">
+            <i class="fas fa-utensils"></i>
+            <h3>Food & Drinks</h3>
+            <p>Savor Local Flavors Without the Splurge,
+              Delicious Meals, Delightful Prices.</p>
+          </div>
+           <div class="boxs" data-aos="zoom-in-up" data-aos-delay="450">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotel</h3>
+            <p>Handpicked budget hotels with great comfort Clean, safe, and traveler-approved stays.</p>
+          </div>
+          <div class="boxs" data-aos="zoom-in-up" data-aos-delay="600">
+            <i class="fas fa-wallet"></i>
+            <h3>Affordable Price</h3>
+            <p>Unforgettable Trips Within Your Budget,
+             Luxury Feels, Budget Deals.</p>
+          </div>
+          <div class="boxs" data-aos="zoom-in-up" data-aos-delay="750">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Personalized travel advice from our experts, Budget-friendly planning based on your needs.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+    
+      
+      
+      
+      
+
+      
+    <section id="travel-places">
+      <div class="travel-container">
+        <h1 class="heading-normal-txt"><i class="ri-leaf-fill"></i>India Iconic<i class="ri-leaf-fill"></i></h1>
+        <h2 class="headings"><i class="ri-earth-line"></i> Travel Spots</h2>
+
+        <div class="travel-places-wrapper">
+          <div class="places-content">
+            <h2 class="secondary-headings">North, South</h2>
+            <p class="lead">
+            🌄North India Tourist Places
+            North India is a land of majestic mountains, historical wonders, and spiritual journeys. 
+            From the snow-capped peaks of Kashmir and Himachal Pradesh to the golden deserts of Rajasthan, the region is steeped in culture and adventure.
+            Explore the sacred ghats of Varanasi, the architectural marvel of the Taj Mahal in Agra, and the bustling charm of Delhi.
+            Hill stations like Manali, Shimla, and Nainital offer serene escapes, while Amritsar’s Golden Temple reflects divine peace.</p><br>
+            <p class="lead">
+           🌴South India Tourist Places
+           South India enchants travelers with its lush greenery, tranquil backwaters, and ancient temples. 
+            Visit the peaceful hill stations of Ooty and Kodaikanal, the tea gardens of Munnar, and the cultural richness of Mysore.
+            Kerala’s Alleppey offers houseboat cruises through scenic backwaters, while Tamil Nadu’s Madurai and Rameswaram showcase Dravidian temple architecture.
+            Beaches in Goa and Pondicherry promise a perfect tropical getaway with vibrant coastal vibes.
+            </p>
+            <ul>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Kashmir</li>
+                <li><i class="fa fa-location-dot"></i> Himachal Pradesh</li>
+                <li><i class="fa fa-location-dot"></i> Rajasthan</li>
+              </div>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Delhi</li>
+                <li><i class="fa fa-location-dot"></i> Agra</li>
+                <li><i class="fa fa-location-dot"></i> Manali</li>
+              </div>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Munnar</li>
+                <li><i class="fa fa-location-dot"></i> Ooty</li>
+                <li><i class="fa fa-location-dot"></i> Mysore</li>
+              </div>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Kodaikanal</li>
+                <li><i class="fa fa-location-dot"></i> Rameswaram</li>
+                <li><i class="fa fa-location-dot"></i> Alleppey</li>
+              </div>
+            </ul>
+            <a href="#travel" class="primary-btn"><i class="fa fa-arrow-right"></i> VIEW ALL PLACES </a>
+          </div>
+
+
+          <div class="slider-content-wrapper swiper1">
+            <div class="swiper-wrapper">
+              <div class="carousel swiper-slide">
+            <img src="./images/travel-1.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Kashmir, Srinagar Lake</h2>
+              </div>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 7,500</p>
+            </div>
+          </div>
+
+          <div class="carousel swiper-slide">
+            <img src="./images/travel-2.webp" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Kerala, Munnar Hills</h2>
+              </div>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 8,000</p>
+            </div>
+          </div>
+          
+          <div class="carousel swiper-slide">
+            <img src="./images/travel-3.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Umaid Bhawan Palaces</h2>
+              </div>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 6,000</p>
+            </div>
+          </div>
+
+          <div class="carousel swiper-slide">
+            <img src="./images/travel-4.avif" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Kodaikanal Lake</h2>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 7,000</p>
+            </div>
+          </div>
+
+            <div class="carousel swiper-slide">
+              <img src="./images/travel-5.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Nainital, Naini Lake</h2>
+              </div>
+            <div class="price-label">
+              <p>&#8377; 5,500</p>
+            </div>
+          </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+      <div class="travel-content" id="travel">
+         <div class="slider-content-wrapper swiper1">
+            <div class="swiper-wrapper">
+              <div class="carousel swiper-slide">
+                <img src="./images/places-1.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Mount Abu</h2>
+              </div>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 7,000</p>
+            </div>
+          </div>
+
+          <div class="carousel swiper-slide">
+            <img src="./images/places-2.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Yumthang, Sikkim</h2>
+              </div>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 7,500</p>
+            </div>
+          </div>
+          
+          <div class="carousel swiper-slide">
+            <img src="./images/places-3.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Udaipur City Palace</h2>
+              </div>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 5,500</p>
+            </div>
+          </div>
+
+          <div class="carousel swiper-slide">
+            <img src="./images/places-4.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i> Meghalaya Shillong</h2>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 7,500</p>
+            </div>
+          </div>
+          
+          <div class="carousel swiper-slide">
+            <img src="./images/places-5.jpg" alt="" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-location-dot"></i>Nainital, Naini Lake</h2>
+            </div>
+            <div class="price-label">
+              <p>&#8377; 5,500</p>
+            </div>
+          </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="places-content">
+            <h2 class="secondary-headings">East, West</h2>
+            <p class="lead">
+              🌳East India: A Cultural and Scenic Tapestry
+              East India is a blend of ancient traditions, spiritual essence, and breathtaking landscapes.
+               This region offers a peaceful escape with its lush green hills, calm rivers, and vibrant tribal culture.
+                Known for its rich classical dances, colorful festivals, and majestic temples, East India welcomes travelers with warm hospitality and deep-rooted heritage.
+               From misty tea gardens to historical landmarks, every experience here is soulful and authentic.
+              </p><br>
+              <p class="lead">
+                🌋West India: A Land of Royal Grandeur and Natural Wonders
+               West India captivates with its desert landscapes, coastal charm, and royal history. 
+               It is a region where age-old forts meet sun-drenched beaches, and colorful bazaars blend with modern cities. 
+               Rich in art, architecture, and culinary delights, this side of India invites tourists to explore palaces, vibrant festivals, and scenic hill stations. 
+                Whether you seek adventure, heritage, or relaxation, West India offers a journey full of vibrant colors and unforgettable stories.
+            </p>
+            <ul>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Darjeeling</li>
+                <li><i class="fa fa-location-dot"></i> Sikkim</li>
+                <li><i class="fa fa-location-dot"></i> Kolkata</li>
+              </div>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Odisha</li>
+                <li><i class="fa fa-location-dot"></i> Meghalaya</li>
+                <li><i class="fa fa-location-dot"></i> Udaipur</li>
+              </div>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Mumbai</li>
+                <li><i class="fa fa-location-dot"></i> Assam</li>
+                <li><i class="fa fa-location-dot"></i> Maharashtra</li>
+              </div>
+              <div class="places-name">
+                <li><i class="fa fa-location-dot"></i> Mahabaleshwar</li>
+                <li><i class="fa fa-location-dot"></i> Goa</li>
+                <li><i class="fa fa-location-dot"></i> Gujarat</li>
+              </div>
+            </ul>
+            <a href="#travel-places" class="primary-btn"><i class="fa fa-arrow-right"></i> VIEW ALL PLACES </a>
+          </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+    <section class="review-container">
+      <div class="review-image">
+        <img src="./images/review-img.jpg" alt="review" />
+      </div>
+      <div class="review-content">
+        <h1 class="review-subheader">Top Reviews</h1>
+        <h2 class="review-header">Our Valuable Clients Say About Us</h2>
+      
+        <div class="swiper swiper2">
+      
+          <div class="swiper-wrapper">
+        
+            <div class="swiper-slide">
+              <div class="review-card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="review-description">
+                  "TripIndia made our honeymoon truly unforgettable!
+                   Every detail was thoughtfully planned from the romantic destinations to the cozy stays. 
+                  We didn’t have to worry about a thing. Thank you for making our dream trip come true!"
+                </p>
+                <h4>Anjali Mehta</h4>
+                <h5>Travel Blogger</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review-card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="review-description">
+                  "We had a wonderful family vacation with TripIndia! The package was budget-friendly, the hotels were clean and comfortable, 
+                  and the staff was always available to help. It was a perfect mix of relaxation and adventure. Highly recommend for all families!"
+                </p>
+                <h4>Rahul sharma</h4>
+                <h5>Photographer</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="review-card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="review-description">
+                  "Being my first solo trip, I was a bit anxious, but TripIndia handled everything like pros.
+                   The itinerary was well-organized, the guides were friendly, and the whole experience felt safe and enjoyable. Can’t wait to travel again!"
+                </p>
+                <h4>Vikram Joshi</h4>
+                <h5>Business Consultant</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div> 
+
+            <div class="swiper-slide">
+              <div class="review-card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="review-description">
+                 "Absolutely loved every bit of the trip! The booking process was smooth, 
+                 the travel was well-managed, and we got to explore some amazing hidden gems. Thanks to TripIndia, we had a stress-free and memorable journey."
+                </p>
+                <h4>Varun Kumar</h4>
+                <h5>Travel Blogger</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="review-card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="review-description">
+                  I've traveled a lot for work, but TripIndia gave me the
+                  opportunity to enjoy a stress-free vacation. Their attention
+                  to detail was remarkable, ensuring everything from airport
+                  transfers to guided tours was perfectly arranged. The
+                  personalized itinerary was well-balanced with adventure and
+                  relaxation!
+                </p>
+                <h4>Sophia Lee</h4>
+                <h5>Business Consultant</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+
+    <section class="blog" id="blog">
+      
+      <h2 class="heading">— Our Latest News & Blogs —</h2>
+      <h1 class="heading-normal-txts"><i class="ri-leaf-fill"></i>Blogs<i class="ri-leaf-fill"></i></h1>
+      <div class="blog-container">
+
+      <div class="blog-box">
+        <img src="./images/blog-img1.jpg" alt="">
+        <div class="blog-content">
+          <h3><i class="ri-time-fill"></i> Jan 2025 | <i class="ri-user-line"></i> By John</h3>
+          <p>“I loved how beautifully the blog was written and designed. 
+            The mix of great visuals and helpful info made it a joy to read. It’s now my go-to source for all future trips!”</p>
+          <a href="#blog" class="primary-btn">READ MORE ...</a>
+        </div>
+      </div>
+
+      <div class="blog-box">
+        <img src="./images/blog-img2.jpg" alt="">
+        <div class="blog-content">
+          <h3><i class="ri-time-fill"></i> Mar 2025 | <i class="ri-user-line"></i> By Priya Sharma</h3>
+          <p>“I appreciate how the blog explains things in a straightforward way. The travel
+             suggestions are realistic, and the visuals are stunning. It’s enjoy more of every place I visit.”
+           </p>
+          <a href="#blog" class="primary-btn">READ MORE ...</a>
+        </div>
+      </div>
+
+       <div class="blog-box">
+        <img src="./images/blog-img3.webp" alt="">
+        <div class="blog-content">
+          <h3><i class="ri-time-fill"></i> Jun 2025 | <i class="ri-user-line"></i> By Arjun</h3>
+          <p>“The layout is clean, and the articles are well-structured. I love how it personal stories with practical tips.
+             It’s easy to read, inspiring, and makes me want to explore new destinations every time.”
+           </p>
+          <a href="#blog" class="primary-btn">READ MORE ...</a>
+        </div>
+      </div>
+
+      </div>
+    </section>
+      
+
+
+    <section class="newsletter-section" id="newsletter">
+       <div class="newsletter-container">
+         <h2 class="newsletter-heading">Stay Updated!</h2>
+         <p class="newsletter-text">Subscribe to our newsletter and never miss a travel deal, new destination, or amazing travel tip.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </section>
+
+
+
+
+    
+
+    <footer id="contact">
+      <div class="footer-row">
+        
+        <div class="col">
+          <h3>Contact Us <div class="underline"><span></span></div></h3>
+          <ul>
+          <li>No. 45, 2nd Floor, Mount Road,</li>
+          <li>T.nagar, Chennai - 600017,</li>
+          <li>Tamil Nadu, India.</li>
+          <li class="email-id">TripIndia@gmail.com</li>
+          <h4>+91 - 8608007733</h4>
+        </ul>
+        </div>
+
+        <div class="col">
+          <h3>Ouick Links <div class="underline"><span></span></div></h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#popular">Destination</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Experience <div class="underline"><span></span></div></h3>
+          <ul>
+            <li>Adventure</li>
+            <li>Beach</li>
+            <li>Nature</li>
+            <li>Honeymoon</li>
+            <li>Wildlife</li>
+            <li>Party</li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <h3>Information <div class="underline"><span></span></div></h3>
+          <ul>
+            <li>Online Enquiry</li>
+            <li>General Enquiry</li>
+            <li>Booking Conditions</li>
+            <li>Privacy and Policy</li>
+            <li>Refund Policy</li>
+            <li>Call Us</li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <h1>Trip<span>India</span></h1>
+          <p>Discover the beauty of India with TripIndia — your trusted travel partner. From majestic mountains to serene beaches, ancient heritage to vibrant cultures, we bring you the best travel experiences across India. 
+            Plan your journey with confidence, enjoy handpicked destinations, and create unforgettable memories.</p>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        
+      </div>
+      <hr>
+      <p class="copyright">Copyright &copy; 2025 TripIndia. All rights reserved. </p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+
+    
+
+
+</body>
+</html>
